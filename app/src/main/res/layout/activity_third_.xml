@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Single_Player">
+    tools:context=".Third_Activity">
 
     <com.google.android.exoplayer2.ui.PlayerView
         android:id="@+id/videoFullScreenPlayer"
@@ -38,7 +38,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <Spinner
         android:id="@+id/video_quality"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,7 +46,6 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:background="@android:color/transparent"
-        android:text="720P"
         android:textColor="@android:color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

@@ -8,4 +8,45 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="PlayerTheme" parent="android:Theme.Holo">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+
+    <style name="PlayerTheme.Spherical">
+        <item name="surface_type">spherical_view</item>
+    </style>
+
+
+    <style name="CustomExoMediaButton">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="CustomExoMediaButton.Play">
+        <item name="android:src">@drawable/play</item>
+    </style>
+
+    <style name="CustomExoMediaButton.Pause">
+        <item name="android:src">@drawable/pause</item>
+    </style>
+
+    <style name="CustomExoMediaButton.Rewind">
+        <item name="android:src">@drawable/backward</item>
+    </style>
+
+    <style name="CustomExoMediaButton.FastForward">
+        <item name="android:src">@drawable/fast_forward</item>
+    </style>
+
+    <style name="CustomExoMediaButton.Prev">
+        <item name="android:src">@drawable/previous</item>
+    </style>
+
+    <style name="CustomExoMediaButton.Next">
+        <item name="android:src">@drawable/skip</item>
+    </style>
+
 </resources>
