@@ -14,42 +14,41 @@
         android:orientation="horizontal"
         android:paddingTop="4dp">
 
-
         <ImageButton
             android:id="@id/exo_prev"
             style="@style/CustomExoMediaButton.Prev"
             android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"/>
+            android:layout_marginEnd="5dp" />
 
         <ImageButton
             android:id="@id/exo_rew"
             style="@style/CustomExoMediaButton.Rewind"
             android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"/>
+            android:layout_marginEnd="5dp" />
 
         <ImageButton
             android:id="@id/exo_play"
             style="@style/CustomExoMediaButton.Play"
             android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"/>
+            android:layout_marginEnd="5dp" />
 
         <ImageButton
             android:id="@id/exo_pause"
             style="@style/CustomExoMediaButton.Pause"
             android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"/>
+            android:layout_marginEnd="5dp" />
 
         <ImageButton
             android:id="@id/exo_ffwd"
             style="@style/CustomExoMediaButton.FastForward"
             android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"/>
+            android:layout_marginEnd="5dp" />
 
         <ImageButton
             android:id="@id/exo_next"
             style="@style/CustomExoMediaButton.Next"
             android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"/>
+            android:layout_marginEnd="5dp" />
     </LinearLayout>
 
     <LinearLayout

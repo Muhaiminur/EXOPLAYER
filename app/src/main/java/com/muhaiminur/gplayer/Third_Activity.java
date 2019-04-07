@@ -122,7 +122,7 @@ public class Third_Activity extends AppCompatActivity implements PlaybackPrepare
 
     private void initializePlayer() {
         if (player == null) {
-            // 1. Create a default TrackSelector
+            //Create a default Loadcontrol
             /*LoadControl loadControl = new DefaultLoadControl(
                     new DefaultAllocator(true, 16),
                     2 * VideoPlayerConfig.MIN_BUFFER_DURATION,
@@ -130,12 +130,10 @@ public class Third_Activity extends AppCompatActivity implements PlaybackPrepare
                     VideoPlayerConfig.MIN_PLAYBACK_START_BUFFER,
                     VideoPlayerConfig.MIN_PLAYBACK_RESUME_BUFFER, -1, true);*/
             LoadControl loadControl = new DefaultLoadControl.Builder().setBufferDurationsMs(2 * VideoPlayerConfig.MIN_BUFFER_DURATION, 2 * VideoPlayerConfig.MAX_BUFFER_DURATION, VideoPlayerConfig.MIN_PLAYBACK_START_BUFFER, VideoPlayerConfig.MIN_PLAYBACK_RESUME_BUFFER).createDefaultLoadControl();
-
+            //Create a default TrackSelector
             BandwidthMeter bandwidthMeter = new DefaultBandwidthMeter();
-            TrackSelection.Factory videoTrackSelectionFactory =
-                    new AdaptiveTrackSelection.Factory();
-            trackSelector =
-                    new DefaultTrackSelector(videoTrackSelectionFactory);
+            TrackSelection.Factory videoTrackSelectionFactory = new AdaptiveTrackSelection.Factory();
+            trackSelector = new DefaultTrackSelector(videoTrackSelectionFactory);
             // 2. Create the player
             player = ExoPlayerFactory.newSimpleInstance(this, new DefaultRenderersFactory(this), trackSelector, loadControl);
             videoFullScreenPlayer.setPlayer(player);
@@ -324,24 +322,24 @@ public class Third_Activity extends AppCompatActivity implements PlaybackPrepare
         // parent.getItemAtPosition(pos)
         Log.d("Video Quality", pos + "");
         long time = player.getCurrentPosition();
-        switch(pos) {
-            case 0 :
+        switch (pos) {
+            case 0:
                 buildMediaSource(Uri.parse(quality.getZero()));
                 player.seekTo(0, time);
                 break;
-            case 1 :
+            case 1:
                 buildMediaSource(Uri.parse(quality.getOne()));
                 player.seekTo(0, time);
                 break;
-            case 2 :
+            case 2:
                 buildMediaSource(Uri.parse(quality.getTwo()));
                 player.seekTo(0, time);
                 break;
-            case 3 :
+            case 3:
                 buildMediaSource(Uri.parse(quality.getThree()));
                 player.seekTo(0, time);
                 break;
-            case 4 :
+            case 4:
                 buildMediaSource(Uri.parse(quality.getFour()));
                 player.seekTo(0, time);
                 break;
@@ -349,7 +347,7 @@ public class Third_Activity extends AppCompatActivity implements PlaybackPrepare
                 buildMediaSource(Uri.parse(quality.getFive()));
                 player.seekTo(0, time);
                 break;
-            default :
+            default:
                 System.out.println("Invalid grade");
         }
     }
@@ -359,7 +357,7 @@ public class Third_Activity extends AppCompatActivity implements PlaybackPrepare
 
     }
 
-    public void init_object(){
-        quality=new VIDEO_QUALITY("http://vdog.radiogbd.com/video/144p/176.mp4","http://vdog.radiogbd.com/video/240p/176.mp4","http://vdog.radiogbd.com/video/360p/176.mp4","http://vdog.radiogbd.com/video/480p/176.mp4","http://vdog.radiogbd.com/video/720p/176.mp4","http://vdog.radiogbd.com/video/1080p/176.mp4");
+    public void init_object() {
+        quality = new VIDEO_QUALITY("http://vdog.radiogbd.com/video/144p/176.mp4", "http://vdog.radiogbd.com/video/240p/176.mp4", "http://vdog.radiogbd.com/video/360p/176.mp4", "http://vdog.radiogbd.com/video/480p/176.mp4", "http://vdog.radiogbd.com/video/720p/176.mp4", "http://vdog.radiogbd.com/video/1080p/176.mp4");
     }
 }
