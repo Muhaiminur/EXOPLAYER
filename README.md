@@ -231,5 +231,3 @@ Welcome to the EXOPLAYER wiki!
 * Change Video With LINK
 
 ![Change Video With LINK](https://github.com/Muhaiminur/EXOPLAYER/blob/master/DOCUMENTATION/DIFFERENT%20QUALITY.gif)
-
-You Can Download Apk From [Here](https://github.com/Muhaiminur/EXOPLAYER/blob/master/DOCUMENTATION/APK/app-debug.apk)
