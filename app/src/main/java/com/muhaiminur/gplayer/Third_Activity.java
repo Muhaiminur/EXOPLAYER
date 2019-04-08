@@ -358,6 +358,6 @@ public class Third_Activity extends AppCompatActivity implements PlaybackPrepare
     }
 
     public void init_object() {
-        quality = new VIDEO_QUALITY("http://vdog.radiogbd.com/video/144p/176.mp4", "http://vdog.radiogbd.com/video/240p/176.mp4", "http://vdog.radiogbd.com/video/360p/176.mp4", "http://vdog.radiogbd.com/video/480p/176.mp4", "http://vdog.radiogbd.com/video/720p/176.mp4", "http://vdog.radiogbd.com/video/1080p/176.mp4");
+        quality = new VIDEO_QUALITY("https://archive.org/download/Popeye_forPresident/Popeye_forPresident_512kb.mp4", "https://archive.org/download/Popeye_forPresident/Popeye_forPresident_512kb.mp4", "https://archive.org/download/Popeye_forPresident/Popeye_forPresident_512kb.mp4", "https://archive.org/download/Popeye_forPresident/Popeye_forPresident_512kb.mp4", "https://archive.org/download/Popeye_forPresident/Popeye_forPresident_512kb.mp4", "https://archive.org/download/Popeye_forPresident/Popeye_forPresident_512kb.mp4");
     }
 }
